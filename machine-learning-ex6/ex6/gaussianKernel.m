@@ -15,7 +15,10 @@ sim = 0;
 %               sigma
 %
 %
+numer = sum(((x1 - x2) .^ 2));
+denom = 2 * sigma * sigma;
 
+sim = exp( - numer/denom);
 
 
 
